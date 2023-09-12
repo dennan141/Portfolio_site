@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark">
+
+<body>
     <!--TODO
     lägg till bild på hemsidan
     Gör en kort intro om dig själv
@@ -31,17 +35,40 @@
     Handlebars
     Felhantering?
     -->
-    <ul class="nav">
-        <li>Hem</li>
-        <li>Om mig</li>
-        <li>Kontakt</li>
-        <li>Portfölj</li>
-    </ul> 
 
-      
-    <img src="/resources/homePagePicture.jpg" alt="Bild på Dennis Karlsson" style="height: 500px;">
+    <!--Navigation bar här-->
+    <!--TODO: #1 implementera navbar och liknande med HBS så vi slipper ha samma kod på flera ställen-->
+    <nav class="nav navbar-expand-md bg-dark">
+        <ul class="nav-tabs bg-light-subtle container-fluid">
+            <li class="btn-dark btn"><a href="/home.html">Hem</a></li>
+            <li class="btn-dark btn"><a href="about.html">Om mig</a></li>
+            <li class="btn-dark btn"><a href="contact.html">Kontakt</a></li>
+            <li class="btn-dark btn"><a href="portfolio.html">Portfölj</a></li>
+        </ul>
+    </nav>
+
+
+    <!--TODO skaffa en annan bild eller gör den bättre iaf-->
+    <div class="row text-center">
+        <div class="col text-center">
+            <img src="/resources/DesktopBackground.jpeg" alt="Bild på Dennis Karlsson" class="img-fluid">
+            <p class="text-center">Hej! Mitt namn är Dennis och jag studerar till webbutvecklare.
+                Jag har bakgrund inom mjukvaruutveckling och mobila plattformar sen tidigare stuider vid Jönköping
+                university
+                samt studier inom socialpedagogik och gruppdynamik.
+
+                På fritiden gillar jag att spela schack, spela datorspel eller spenderar timmarna med min sambo.
+            </p>
+        </div>
+
+
+
+    </div>
+
+
 
 
 
 </body>
+
 </html>
